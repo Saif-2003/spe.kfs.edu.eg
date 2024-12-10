@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 
+      قسم الإعلام التربوي
+    </title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- The navbar -->
+    <div class="fixed-top navbar navbar-expand-sm p-0">
+      <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#theTarget"
+        class="navbar-toggler"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul
+        class="collapse navbar-collapse nav nav-pills nav-fill gap-lg-5 p-lg-2 p-1 big fs-4 bg-primary rounded-1 shadow-sm"
+        id="theTarget"
+        role="tablist"
+        style="
+          --bs-nav-link-color: var(--bs-white);
+          --bs-nav-pills-link-active-color: var(--bs-primary);
+          --bs-nav-pills-link-active-bg: var(--bs-white);
+        "
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-3"
+            id="home-tab2"
+            data-bs-toggle="tab"
+            onclick="scrollToSection('home')"
+            type="button"
+            role="tab"
+            aria-selected="true"
+          >
+            الرئيسية
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-3"
+            id="profile-tab2"
+            data-bs-toggle="tab"
+            onclick="scrollToSection('collage')"
+            type="button"
+            role="tab"
+            aria-selected="false"
+          >
+            الكلية
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-3"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            onclick="scrollToSection('department')"
+            type="button"
+            role="tab"
+            aria-selected="false"
+          >
+            عن القسم
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-3"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            onclick="scrollToSection('contact')"
+            type="button"
+            role="tab"
+            aria-selected="false"
+          >
+            تواصل معنا
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!-- Home -->
+    <div id="home" class="container-fluid">
+      <div class="p-4 p-md-5 fs-4 mb-5 rounded big">
+        <div class="row mt-5">
+          <!-- النص في العمود الأيسر -->
+          <div
+            class="mt-5 mb-5 col-lg-6 d-flex flex-column justify-content-center"
+          >
+            <h1 id="the-main-content" class="h1 display-4 fst-italic">
+              جامعة كفرالشيخ
+              <br />
+              كلية التربية النوعية
+              <br />
+              قسم الإعلام التربوي
+              <br />
+              <br />
+              <button
+                style="width: fit-content; width: 200px; height: 70px"
+                onclick="scrollToSection('collage')"
+                class="btn btn-outline-primary fs-4"
+                type="button"
+              >
+                مرحبا بكم
+              </button>
+            </h1>
+          </div>
+
+          <!-- الصورة في العمود الأيمن -->
+          <div class="mt-5 mb-5 col-lg-6">
+            <img
+              src="./Home.png"
+              class="rounded float-end rounded mx-auto d-block img-thumbnail shadow-lg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Collage -->
+    <div id="collage" class="container-xxl">
+      <div class="p-4 p-md-5 fs-4 mb-5 rounded big">
+        <div class="row">
+          <!-- النص في العمود الأيسر -->
+          <div
+            class="mt-5 mb-5 col-lg-6 d-flex flex-column justify-content-center"
+          >
+            <h1 id="the-main-content" class="h1 display fst-italic">
+              تقوم الكلية بإعداد معلمين متخصصين في مجالات ترتبط بالتكنولوجيا
+              والإعلام والموسيقى والفنون والاقتصاد المنزلي <br /><span
+                style="color: red"
+                >بالإضافة الى الجانب التربوي</span
+              >
+              <br />
+            </h1>
+            <div class="container mt-5">
+              <button
+                style="width: 200px; height: 70px"
+                onclick="scrollToSection('department')"
+                class="btn btn-outline-primary fs-4"
+                type="button"
+              >
+                عن القسم
+              </button>
+            </div>
+          </div>
+          <!-- الصورة في العمود الأيمن -->
+          <div class="mt-5 mb-5 col-lg-6">
+            <img
+              src="./collage .jpg"
+              class="float-end mx-auto d-block img-thumbnail shadow-lg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Department -->
+    <div id="department" class="container-fluid mb-5">
+      <div class="p-4 p-md-5 fs-4 mb-5 rounded big">
+        <div class="row">
+          <!-- النص في العمود الأيسر -->
+          <div
+            class="mt-5 mb-5 col-6 d-flex flex-column justify-content-center"
+          >
+            <h1 id="the-main-content" class="display-5 fst-italic">
+              يهدف قسم الإعلام التربوي الى تأهيل متخصصين يجمعون بين مهارات
+              الإعلام والمعرفة التربوية لخلق محتوى إعلامي يعزز التوعية والتعليم
+              في المجتمع
+            </h1>
+            <div class="mt-5">
+              <button
+                style="width: fit-content; width: 200px; height: 70px"
+                onclick="scrollToSection('contact')"
+                class="btn btn-outline-primary fs-4"
+                type="button"
+              >
+                للتواصل
+              </button>
+            </div>
+          </div>
+          <!-- الصورة في العمود الأيمن -->
+          <div class="mt-5 mb-5 col-6">
+            <img
+              src="./Department.jpg"
+              class="w-auto d-block rounded img-thumbnail shadow-lg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div id="contact" class="container-fluid mt-5">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li>
+            <a
+              href="https://kfs.edu.eg/"
+              target="_blank"
+              class="nav-link link-primary"
+              ><button class="btn btn-lg btn-outline-info text-dark mb-3">
+                موقع الجامعة
+              </button></a
+            >
+          </li>
+        </ul>
+        <p dir="rtl" class="text-center text-primary mt-5 mb-5">
+          &copy; 2024 قسم الأعلام التربوي | الفرقة الثالثة | كلية التربية النوعية .
+          <br/>
+          تم تنفيذ الموقع كجزء من مشروع جماعي بإشراف قسم الإعلام التربوي .
+        </p>
+
+        <a
+        href="./aboutMe.html"
+        target="_blank"
+        class="text-center mt-5 nav-link link-primary"
+        ><button class="btn btn-sm btn-outline-danger text-dark">
+          حول الموقع
+        </button></a
+      >
+
+        
+
+      </footer>
+    </div>
+    <!-- JavaScript للتنقل بين الأقسام -->
+    <script>
+      function scrollToSection(sectionId) {
+        document
+          .getElementById(sectionId)
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+    <script src="./bootstrap.min.js"></script>
+  </body>
+</html>
