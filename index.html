@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قسم الإعلام التربوي</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- The navbar -->
+    <div class="fixed-top navbar navbar-expand-sm p-0">
+      <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#theTarget"
+        class="navbar-toggler"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul
+        class="collapse navbar-collapse nav nav-pills nav-fill gap-lg-5 p-lg-2 p-1 big fs-4 bg-primary rounded-1 shadow-sm"
+        id="theTarget"
+        role="tablist"
+        style="
+          --bs-nav-link-color: var(--bs-white);
+          --bs-nav-pills-link-active-color: var(--bs-primary);
+          --bs-nav-pills-link-active-bg: var(--bs-white);
+        "
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-3"
+            id="home-tab2"
+            data-bs-toggle="tab"
+            onclick="scrollToSection('home')"
+            type="button"
+            role="tab"
+            aria-selected="true"
+          >
+            الرئيسية
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-3"
+            id="profile-tab2"
+            data-bs-toggle="tab"
+            onclick="scrollToSection('collage')"
+            type="button"
+            role="tab"
+            aria-selected="false"
+          >
+            الكلية
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-3"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            onclick="scrollToSection('department')"
+            type="button"
+            role="tab"
+            aria-selected="false"
+          >
+            عن القسم
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-3"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            onclick="scrollToSection('news')"
+            type="button"
+            role="tab"
+            aria-selected="false"
+          >
+            الاخبار
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-3"
+            id="contact-tab2"
+            data-bs-toggle="tab"
+            onclick="scrollToSection('contact')"
+            type="button"
+            role="tab"
+            aria-selected="false"
+          >
+            تواصل معنا
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!-- Home -->
+    <div id="home" class="container-fluid">
+      <div class="p-4 p-md-5 fs-4 mb-5 rounded big">
+        <div class="row mt-5">
+          <!-- النص في العمود الأيسر -->
+          <div
+            class="mt-5 mb-5 col-lg-6 d-flex flex-column justify-content-center"
+          >
+            <h1 id="the-main-content" class="h1 display-4 fst-italic">
+              جامعة كفرالشيخ
+              <br />
+              كلية التربية النوعية
+              <br />
+              قسم الإعلام التربوي
+            </h1>
+          </div>
+
+          <!-- الصورة في العمود الأيمن -->
+          <div class="mt-5 mb-5 col-lg-6">
+            <img
+              src="./Home.png"
+              class="rounded float-end rounded mx-auto d-block img-thumbnail shadow-lg"
+              alt=""
+            />
+          </div>
+          <div class="container-fluid mt-1 mb-5">
+            <button
+              style="width: 200px; height: 70px"
+              onclick="scrollToSection('collage')"
+              class="btn btn-outline-primary fs-4"
+              type="button"
+            >
+              مرحبا بكم
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- Collage -->
+    <div id="collage" class="container-fluid">
+      <div class="p-4 p-md-5 fs-4 mb-5 rounded big">
+        <div class="row">
+          <!-- النص في العمود الأيسر -->
+          <div
+            class="mt-5 mb-5 col-lg-6 d-flex flex-column justify-content-center"
+          >
+            <h1 id="the-main-content" class="h1 display fst-italic">
+              تقوم الكلية بإعداد معلمين متخصصين في مجالات ترتبط بالتكنولوجيا
+              والإعلام والموسيقى والفنون والاقتصاد المنزلي <br /><span
+                style="color: red"
+                >بالإضافة الى الجانب التربوي</span
+              >
+              <br />
+            </h1>
+          </div>
+          <!-- الصورة في العمود الأيمن -->
+          <div class="mt-5 mb-5 col-lg-6">
+            <img
+              src="./collage .jpg"
+              class="rounded float-end rounded mx-auto d-block img-thumbnail shadow-lg"
+              alt=""
+            />
+          </div>
+          <div class="container-fluid mt-1">
+            <button
+              style="width: 200px; height: 70px"
+              onclick="scrollToSection('department')"
+              class="btn btn-outline-primary fs-4"
+              type="button"
+            >
+              عن القسم
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- Department -->
+    <div id="department" class="container-fluid">
+      <div class="p-4 p-md-5 fs-4 mb-5 rounded big">
+        <div class="row">
+          <!-- النص في العمود الأيسر -->
+          <div
+            class="mt-5 mb-5 col-lg-6 d-flex flex-column justify-content-center"
+          >
+            <h1 id="the-main-content" class="h1 display fst-italic">
+              يهدف قسم الإعلام التربوي الى تأهيل متخصصين يجمعون بين مهارات
+              الإعلام والمعرفة التربوية لخلق محتوى إعلامي يعزز التوعية والتعليم
+              في المجتمع
+              <br />
+            </h1>
+          </div>
+          <!-- الصورة في العمود الأيمن -->
+          <div class="mt-5 mb-1 col-lg-6">
+            <img
+              src="./Department.jpg"
+              class="rounded float-end rounded mx-auto d-block img-thumbnail shadow-lg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid card-group mt-1">
+        <div class="card">
+          <img src="./DrNaaglaa.jpeg" alt="" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              عميد الكلية د. نجلاء حسني الأشرف
+            </h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./DrMamdoh.jpeg" alt="" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              رئيس قسم الإعلام التربوي د. ممدوح السيد شتلة
+            </h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./DrWajida.jpeg" alt="" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              وكيل الكلية د. وجيدة محمد حماد
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-4 mb-5">
+        <button
+          style="width: 200px; height: 70px"
+          onclick="scrollToSection('news')"
+          class="btn btn-outline-primary fs-4"
+          type="button"
+        >
+          الأخبار
+        </button>
+      </div>
+      <br>
+      <br>
+    <!-- News -->
+    <div  class="container-fluid mt-5">
+      <h2 id="news" class="text-center text-primary p-1 m-1" >أخبار وفعاليات</h2>
+      <div class="album py-5">
+        <div class="container-fluid">
+    
+          <div class="text-black row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm ">
+                <h5 class="card-title text-center p-2">
+                  احتفلت كلية التربية النوعية بجامعة كفر الشيخ بانتصارات أكتوبر المجيدة، إلى جانب الترحيب بالطلاب الجدد .
+                </h5>
+                <img class="bd-placeholder-img rounded-0 card-img-top" width="100%" height="225" src="./News_imgs/The octonber war.jpeg" alt="">
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    تحت رعايةِ معالي الأستاذِ الدكتورِ عبد الرازق يوسف دسوقي، رئيسِ جامعةِ كفر الشيخ،
+                    والأستاذِ الدكتورِ محمد عبد العال، نائبِ رئيسِ الجامعةِ لشؤونِ التعليمِ والطلاب،
+                    والأستاذِ الدكتورِ إسماعيل القن، نائبِ رئيسِ الجامعةِ لشؤونِ الدراساتِ العليا والبحوث،
+                    والأستاذ الدكتور أماني محمد شاكر، نائبِ رئيسِ الجامعةِ لشؤونِ خدمةِ المجتمع وتنميةِ البيئة.
+                    وتحت إشرافِ الأستاذ الدكتور نجلاء حسني الأشرف، عميدِ كليةِ التربيةِ النوعية،
+                    والأستاذ الدكتور وجيدة حماد، وكيلِ الكليةِ للدراساتِ العليا والبحوث.
+                    وبحضور مشرف لمعالي الأستاذ الدكتور محمد عبد العال ، ومعالى الاستاذ الدكتور أماني شاكر والعقيد حامد مهاب مطر، مدير إدارة التربية العسكرية بالجامعة ولفيف من  السادة أعضاء هيئة التدريس والقيادات بالجامعة . 
+                    حيث تضمن الحفل 
+                    ترحيب معالي العميد بالضيوف الكرام والسادة أعضاء هيئة التدريس والطلاب 
+                    وتوجهت سيادتها بجزيل الشكر والامتنان لفخامة الرئيس عبد الفتاح السيسي، قائد مسيرة التنمية والنهضة في وطننا الغالي، والذي يسعى دائمًا لتعزيز مكانة مصر على الساحة العالمية، ودعم مسيرة التعليم والبحث العلمي.  والشكر لمعالي الاستاذ الدكتور عبد الرازق يوسف دسوقي الذي لا يتواني لحظة في دعم الطلاب ومساندتهم 
+                    في سياق متصل تحدثت معالي الأستاذ الدكتور أماني شاكر نائب رئيس الجامعة لشئون خدمة المجتمع وتنمية البيئة كلمتها عن ابناء مصر ودورهم في أن  يتعلموا   العزيمة والإصرار كما فعل أجدادنا وآبائنا العظماء في السادس من اكتوبر هذه الذكرى العزيزة على قلوبنا جميعًا، والتي ترمز إلى الإصرار والعزيمة والتضحيات الجسيمة التي بذلها أبناء الوطن من أجل استعادة الأرض والكرامة.
+                    كما واصل معالي الأستاذ الدكتور محمد عبد العال نائب رئيس الجامعة لشئون التعليم والطلاب حديثة عن نصر  أكتوبر  وما  يجب أن يتعلمه ابنائنا الطلاب   وأن انتصارات أكتوبر لابد ان تكون دافعًا لهم لتحقيق النجاح والريادة
+                    
+                    ومن ثم إلقاء العقيد حامد مهاب مطر، مدير إدارة التربية العسكرية بالجامعة، محاضرة عن هذه الانتصارات التي تعد إحدى أهم إنجازات مصر العسكرية
+                    
+                    كما تم خلال الاحتفال تكريم السادة أعضاء هيئة التدريس المشاركين في مسابقة "أفضل كلية صديقة للبيئة" و " مسابقة التميز الحكومي لعام ألفين وأربعه وعشرين"
+                    وفي الختام تمنت معالي العميدة دوام التوفيق والتميز والإبداع لابنائها الطلاب داعية الله أن يحققوا آمالهم وطموحاتهم ويؤمنون بأهمية دورهم في تقدم الأمة وأن يكونوا فخرا وعزا لمصر .
+                    حفظ الله مصر جيشا وشعبا وأرضا ووقاها الله شر أعدائها .
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-body-secondary">
+                      الاثنين 14 اكتوبر في تمام الساعه الثانية عشر ظهراً
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <h5 class="card-title p-2 text-center">
+                  تحت رعايةِ معالي الأستاذِ الدكتورِ عبد الرازق يوسف دسوقي، رئيسِ جامعةِ كفر الشيخ والأستاذِ الدكتورِ محمد عبد العال، نائبِ رئيسِ الجامعةِ لشؤونِ التعليمِ والطلاب وإشراف الأستاذ الدكتور نجلاء حسني الأشرف عميد الكلية والأستاذ الدكتور تامر محمد كامل منسق الأنشطة الطلابية بالكلية .
+                </h5>
+                <img class="bd-placeholder-img rounded-0 card-img-top" width="100%" height="225" src="./News_imgs/The genius.jpeg" alt="">
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    تعلن كلية التربية النوعية ولجنة تحكيم تتكون من دكتور عبير بدير دكتور إيمان شبل دكتور زينب وتنظيم رعاية الشباب متمثلة في الأستاذ محمد عمر والأستاذة دينا جريس 
+                    منافسة العباقرة نوعية 2024 حيث صارت المنافسة فى جو عالى من المرح والحب بين الجميع والروح العالية والتواجد الكبير للطلاب للتشيجع كما تواجدت منافسة شديدة على بطل هذا العام، ولكن ظل تصميم فريق تكنولوجيا التعليم حتى الرمق الاخير ليكون بطل هذا العام الذي تكون من الطالب أحمد محمود منصور والطالب محمد خميس خميس و الطالبة رفيده أحمد عبد العليم والطالبة لقاء رشدي عبد الله وفى الختام قامت الأستاذ الدكتور نجلاء حسنى الأشرف بتقديم الشكر والتقدير لسادة القائمين على تنظيم المنافسة كما كرمت سيادتها الفرق الفائزة ونوهت عن وجود العديد من المنافسات العلمية والترفيهية القادمة وشجعت الطلاب على المشاركة وتمنت للجميع دوام التوفيق النجاح
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-body-secondary">
+                      الثلاثاء 12 نوفمبر 2024 م   
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <h5 class="card-title text-center p-2">
+                  تحت رعاية الأستاذ الدكتور عبد الرزاق يوسف الدسوقي، رئيس جامعة كفر الشيخ، والأستاذ الدكتور أماني شاكر، نائب رئيس الجامعة لشئون خدمة المجتمع وتنمية البيئة، نظمت كلية التربية النوعية ندوة حول مخاطر الهجرة غير الشرعية، وذلك في إطار المبادرة الرئاسية "مراكب النجاة".
+                </h5>
+                <img class="bd-placeholder-img card-img-top rounded-0" width="100%" height="225" src="./News_imgs/second start.jpeg" alt="">
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    عُقدت الندوة تحت إشراف الأستاذ الدكتور نجلاء حسني الأشرف، عميد الكلية، والأستاذ الدكتور داليا المصري، وكيل الكلية لشئون تنمية البيئة وخدمة المجتمع. تضمنت الندوة عرضًا لأبرز إنجازات لجنة البيئة بالكلية خلال فعاليات مبادرة "ابدأ بقسمك" التي استمرت خمسة أيام، إلى جانب عرض فيديو توعوي يبرز مخاطر الهجرة غير الشرعية وتأثيرها السلبي على المجتمع.
+                    وألقى الأستاذ الدكتور ممدوح السيد شتلة، رئيس قسم الإعلام التربوي، محاضرة تناولت موضوع الهجرة غير الشرعية بشكل مستفيض، حيث استعرض الأسباب والدوافع التي تؤدي إليها، وركز على أهمية التوعية بأخطارها وتشجيع الشباب على التمسك بفرص العمل المتاحة داخل الوطن.
+                    وفي ختام الندوة، توجهت الأستاذ الدكتور نجلاء حسني الأشرف بخالص الشكر والتقدير إلى فخامة رئيس الجمهورية على دعمه الدائم لمبادرات التوعية وتعزيز الأمن الاجتماعي، مشيرةً إلى أن الشباب هم وقود الأمة وأملها في المستقبل. كما شكرت السادة الحضور جميعًا على مشاركتهم الفعّالة، وأكدت على دور الجامعة في دعم القضايا الوطنية وتعزيز الانتماء، متعهدةً بمواصلة الجهود لتوعية الطلاب وحثهم على حب الوطن والإسهام في بنائه داعية الله أن يحفظ مصر والمصريين .
+                  </p>
+                  <img class="bd-placeholder-img card-img-top rounded-0" height="225" src="./News_imgs/start with your department.jpeg" alt="">
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <h5 class="card-title text-center p-2">
+                  الأستاذ الدكتور عبد الرازق يوسف دسوقي، رئيس جامعة كفرالشيخ معرض الإعلام التربوي تحت عنوان "الإعلام والتنمية"
+                </h5>
+                <img class="bd-placeholder-img card-img-top rounded-0" width="100%" height="225" src="./News_imgs/The show of the department.jpeg" alt="">
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    وجاء ذلك بحضور الاستاذ الدكتور محمد عبد العال نائب رئيس الجامعة لشئون التعليم والطلاب، والاستاذ الدكتور اسماعيل القن نائب رئيس الجامعة للدراسات العليا والبحوث، والاستاذ الدكتور أماني شاكر نائب رئيس الجامعة لشئون خدمة المجتمع وتنمية البيئة، والاستاذ الدكتور علي ابو شوشة نائب رئيس الجامعة الاسبق لشئون خدمة المجتمع وتنمية البيئة، والدكتور علي صبري امين عام الجامعة، والاستاذ الدكتور رشدي العدوي منسق عام الانشطة الطلابية بالجامعة
+                    وتحت إشراف الأستاذ الدكتور/ نجلاء حسني الاشرف عميد الكلية التربية النوعية
+                    والاستاذ الدكتور/ ممدوح السيد شتله رئيس قسم الإعلام التربوي
+                    افتتاح معرض الإعلام التربوي تحت عنوان "الإعلام والتنمية"
+                    واشتمل المعرض على
+                    معرض لمقرر الكتابة للإذاعة والتلفزيون تحت إشراف د/إيمان شبل وم. عبير النمر وشمل على مجموعه من المجسمات الخاصة بالإذاعة والتلفزيون ومبني الانتاج الإعلامي وماسبيرو وأيضا مجسمات لمختلف انواع الكاميرات والأستوديوهات والمايكات باستخدام مواد مصاحبه للبيئة وأيضا مجسمات حول التنمية المستدامة والمشروعات القومية
+                    
+                    معرض لمقرر الصحافة المدرسية تحت إشراف أ.م،د/ هدي عبد العليم ود/ تهاني حشيش ود/  هناء عون ود / سالي بكر وم/ أسماء علي وم/ بسمه علاء واشتمل على عرض لمجموعة من المجلات المدرسية ونماذج أولية تصورية عن استخدامها داخل المدراس
+                    
+                    معرض لمقرر الصحافة الإلكترونية تحت إشراف د / سالي بكر وم/ ريهام عصام وعمل على مجموعة من الفيديوهات الإلكترونية والانفوجرافك وأيضا على إخراج وتصميم صحف إلكترونية حول أهم المشاريع القومية والتوعية بالتنمية الحضارية وبعض الأفلام التسجيلية حول التوعية بالمخاطر البيئية
+                    
+                    لمعرض الخاص بالصحافة المتخصصة تحت إشراف ا.م.د/ ايناس منصور و م/ اسراء الظريف وم/ نورا الكافوري وعمل على العديد من المطبوعات التي تحتوي علي الاخراج الفني وأيضاً الجرائد الورقية التي تناقش اهم القضايا وبمختلف انواع الصحف
+                    
+                    معرض فنون الخبر الصحفي والصحافة المدرسية تحت إشراف ا.م،د/ حنان كامل  و م/ عبير النمر
+                    واشتمل على العديد من المطويات والمطبوعات وأيضا جميع الفنون الصحفية
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-body-secondary">
+                      الخميس 2 / 5 / 2024 م
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <h5 class="card-title text-center p-2">
+                  نظمت كلية التربية النوعية بجامعة كفر الشيخ، تحت رعاية الأستاذ الدكتور عبد الرازق يوسف دسوقي رئيس الجامعة .
+                </h5>
+                <img class="bd-placeholder-img card-img-top rounded-0" width="100%" height="225" src="./News_imgs/takreem.jpeg" alt="">
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    والاستاذ الدكتور محمد عبد العال نائب رئيس الجامعة لشئون التعليم والطلاب 
+                    وتحت إشراف الأستاذ الدكتور نجلاء حسني الأشرف، عميد الكلية، حفلًا لتكريم مستشاري اللجان العلمية من أعضاء هيئة التدريس، وطلاب اتحاد الكلية، والطلاب المتفوقين دراسياً، وذلك  تقديرًا لجهودهم وتميزهم خلال العام الدراسي بحضور الأستاذ الدكتور وجيدة محمد حماد وكيل الكلية لدراسات العليا والبحوث والسادة رؤوساء الأقسام العلمية والسادق منسقي البرامج المميزة مع تواجد للسادة أعضاء هيئة التدريس والهيئة المعاونة بالكلية
+
+                    وأكدت  سيادة العميدة خلال كلمتها في الحفل دعمها الكامل للطلاب، وتمنياتها لهم بمزيد من التوفيق والنجاح في مسيرتهم العلمية والعملية، مشيرة إلى أن الكلية تسعى دائمًا لتوفير بيئة تعليمية محفزة للابتكار والتميز.
+
+                    كما شهد الحفل كلمات ألقاها رؤساء الأقسام العلمية، تحدثوا فيها عن إنجازات أقسامهم وما تحقق من تقدم علمي وبحثي خلال الفترة الماضية، مؤكدين حرصهم على الاستمرار في دعم الطلاب وتقديم أفضل البرامج الأكاديمية.
+
+                    اختتم الحفل بتوزيع شهادات التقدير على مستشاري اللجان والطلاب الاتحاد والطلاب المتفوقين دراسيا  ، وسط أجواء من الفخر والاعتزاز.
+                  </p>
+                  <img class="bd-placeholder-img card-img-top rounded-0 mb-3" width="100%" height="225" src="./News_imgs/takreem2.jpeg" alt="">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-body-secondary">
+                        الأحد 13 اكتوبر في تمام الساعه الثانية 
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <h5 class="card-title text-center p-2">
+                  تحت رعاية الأستاذ الدكتور عبد الرازق دسوقى رئيس الجامعة والأستاذ الدكتور محمد عبدالعال نائب رئيس الجامعة لشئون التعليم والطلاب وإشراف الأستاذ الدكتور نجلاء الاشرف عميد الكلية الأستاذ الدكتور تامر كامل منسق الأنشطة الطلابية بالكلية  وتنظيم رعاية الشباب أعلنت كلية التربية النوعية نتائج  مسابقة الطالب المثالى والطالبة المثالية
+
+                </h5>
+                <img class="bd-placeholder-img card-img-top rounded-0" width="100%" height="225" src="./News_imgs/logo.jpeg" alt="">
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    التي أقيمت الأربعاء الموافق 19 / 11 / 2024 إجراء على مستوى كلية التربية النوعية جامعة كفر الشيخ في جو عالى من التنافس نظراً لعلو وتقارب مستويات الطلاب المقدمين وكانت النتائج كالاتي
+                  </p>
+                  <img class="bd-placeholder-img card-img-top rounded-0 mb-3" width="100%" height="225" src="./News_imgs/competiton.jpeg" alt="">
+                  <img class="bd-placeholder-img card-img-top rounded-0 mb-3" width="100%" height="225" src="./News_imgs/competiton2.jpeg" alt="">
+                  <p class="cart-text text-center">
+                    وفى سياق متصل قامت الأستاذ الدكتور نجلاء حسنى الأشرف عميد الكلية بتقديم الشكر والتقدير لسادة أعضاء لجنة التحكيم ومنسق الأنشطة والسادة أعضاء قسم رعاية الشباب كذلك قد هنأت سيادتها  الطلاب  الفائزين وتمنت لهم دوام التوفيق والنجاح
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-1 mb-5">
+        <button
+          style="width: 200px; height: 70px"
+          onclick="scrollToSection('contact')"
+          class="btn btn-outline-primary fs-4"
+          type="button"
+        >
+          للتواصل
+        </button>
+    </div>
+    <br>
+    <br>
+    <!-- Footer -->
+    <div id="contact" class="container-fluid mt-5">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li>
+            <a
+              href="https://kfs.edu.eg/"
+              target="_blank"
+              class="nav-link link-primary"
+              ><button class="btn btn-lg btn-outline-info text-dark mb-3">
+                موقع الجامعة
+              </button></a
+            >
+          </li>
+        </ul>
+        <p dir="rtl" class="text-center text-primary mt-5 mb-5">
+          &copy; 2024 قسم الأعلام التربوي | الفرقة الثالثة | كلية التربية
+          النوعية .
+          <br />
+          تم تنفيذ الموقع كجزء من مشروع جماعي بإشراف قسم الإعلام التربوي .
+        </p>
+
+        <a
+          href="./aboutMe.html"
+          target="_blank"
+          class="text-center mt-5 nav-link link-primary"
+          ><button class="btn btn-sm btn-outline-danger text-dark">
+            حول الموقع
+          </button></a
+        >
+      </footer>
+    </div>
+    <!-- JavaScript للتنقل بين الأقسام -->
+    <script>
+      function scrollToSection(sectionId) {
+        document
+          .getElementById(sectionId)
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+    <script src="./bootstrap.min.js"></script>
+  </body>
+</html>

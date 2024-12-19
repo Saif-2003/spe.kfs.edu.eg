@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Zain";
+    src: url('fonts/Zain-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Zain", sans-serif;
+}
+
+#the-main-content {
+    color: #0d6efd;
+    line-height: 1.5;
+}
+
+/* Sticky Navbar */
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keeps it on top */
+  }
